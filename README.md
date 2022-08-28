@@ -1,6 +1,6 @@
-# DGNNDS_MFL
+# ResNet_LSTM
 
-This repository contains the source code for developing a multi-lesion diagnosis method for fundus images with a fusion deep graph neural network（DGNNDS_MFL）. This method extracts the lesion features in the fundus image with a convolutional neural network, and then inputs the extracted features into a graph neural network to learn the correlation between different lesions. Finally, the graph is fused. The input features and output features of the neural network are diagnosed by a multi-label classifier.
+This repository contains the source code for developing a multi-lesion diagnosis method for fundus images with a feature sequence processing model, ResNet_LSTM. This method extracts the lesion features in the fundus image with a convolutional neural network, and then inputs the extracted features into a  long short term memory network to learn the correlation between different lesions. Finally, the LSTM is fused. The input features and output features of the neural network are diagnosed by a multi-label classifier.
 
 This system provides a practical strategy for Automatic diagnosis of fundus lesions.
 
@@ -27,22 +27,16 @@ This system provides a practical strategy for Automatic diagnosis of fundus lesi
 ## Install dependencies
 pip install -r requirements.txt
 
-
-
-## Models && adjacency matrices
-You can download the data files and our best models [here](https://pan.baidu.com/s/1xUu3Frta_lH0riMYoBVh7Q)
-password: f113
-
 ## Usage
-git clone https://github.com/Ophthalmology-CAD/DGNNDS_MFL.git
+git clone https://github.com/xupt-glf/ResNet_LSTM.git
 
-cd DGNNDS_MFL
+cd RreNet_LSTM
 
 mkdir data  (download the data needed and put here)
 
 
-- The file "main_resnet_lesion. sh" in /DGNNDS_MFL is used for model training of ResNet fusion depth map neural network in multi-lesion diagnosis of fundus.
-- The file "main_densenet_lesion.sh" in /DGNNDS_MFL is used for model training of DenseNet fusion depth map neural network in multi-lesion diagnosis of fundus.
+- The file "main_resnet_lesion. sh" in /RreNet_LSTM is used for model training of ResNet fusion depth map neural network in multi-lesion diagnosis of fundus.
+- The file "main_densenet_lesion.sh" in /RreNet_LSTM is used for model training of DenseNet fusion depth map neural network in multi-lesion diagnosis of fundus.
 
 
 ## Citation
